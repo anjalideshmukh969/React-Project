@@ -1,261 +1,255 @@
-
 const employees = [
   {
-    id: 1,
-    firstName: "Aarav",
-    email: "employee1@example.com",
-    password: "123",
-    taskCount: 3,
-    tasks: [
+    "id": 1,
+    "firstname": "Aarav",
+    "email": "employee1@example.com",
+    "password": "123",
+    "tasks": [
       {
-        title: "Build login page",
-        description: "Create a responsive login page using React.",
-        date: "2025-09-27",
-        category: "Frontend",
-        active: true,
-        newTask: true,
-        completedTask: false,
-        failed: false
+        "title": "Prepare Sales Report",
+        "description": "Compile the sales data for Q1.",
+        "date": "2025-01-10",
+        "category": "Reporting",
+        "active": true,
+        "newTask": true,
+        "completed": false,
+        "failed": false
       },
       {
-        title: "Fix API errors",
-        description: "Debug and fix issues in authentication API.",
-        date: "2025-09-28",
-        category: "Backend",
-        active: true,
-        newTask: false,
-        completedTask: false,
-        failed: false
+        "title": "Team Meeting",
+        "description": "Attend weekly team sync-up.",
+        "date": "2025-01-12",
+        "category": "Meeting",
+        "active": false,
+        "newTask": false,
+        "completed": true,
+        "failed": false
       },
       {
-        title: "Update documentation",
-        description: "Add usage examples for new components.",
-        date: "2025-09-29",
-        category: "Documentation",
-        active: false,
-        newTask: false,
-        completedTask: true,
-        failed: false
+        "title": "Client Follow-Up",
+        "description": "Follow up with the Alpha Corp client.",
+        "date": "2025-01-14",
+        "category": "Communication",
+        "active": true,
+        "newTask": false,
+        "completed": false,
+        "failed": false
       }
     ],
-    taskSummary: {
-      activeTasks: 2,
-      newTasks: 1,
-      completedTasks: 1,
-      failedTasks: 0
+    "taskNumbers": {
+      "active": 2,
+      "newTask": 1,
+      "completed": 1,
+      "failed": 0
     }
   },
   {
-    id: 2,
-    firstName: "Vihaan",
-    email: "employee2@example.com",
-    password: "123",
-    taskCount: 4,
-    tasks: [
+    "id": 2,
+    "firstname": "Ishan",
+    "email": "employee2@example.com",
+    "password": "123",
+    "tasks": [
       {
-        title: "Design database schema",
-        description: "Plan database schema for new project.",
-        date: "2025-09-27",
-        category: "Database",
-        active: true,
-        newTask: true,
-        completedTask: false,
-        failed: false
+        "title": "Update Website Content",
+        "description": "Refresh homepage banners and texts.",
+        "date": "2025-01-11",
+        "category": "Web",
+        "active": true,
+        "newTask": true,
+        "completed": false,
+        "failed": false
       },
       {
-        title: "Write unit tests",
-        description: "Add Jest unit tests for user module.",
-        date: "2025-09-28",
-        category: "Testing",
-        active: false,
-        newTask: false,
-        completedTask: true,
-        failed: false
+        "title": "Write Blog Article",
+        "description": "Create a draft article about new product features.",
+        "date": "2025-01-15",
+        "category": "Content",
+        "active": false,
+        "newTask": false,
+        "completed": true,
+        "failed": false
       },
       {
-        title: "Refactor navbar",
-        description: "Simplify navbar component with hooks.",
-        date: "2025-09-30",
-        category: "Frontend",
-        active: true,
-        newTask: false,
-        completedTask: false,
-        failed: false
+        "title": "Fix UI Bugs",
+        "description": "Resolve UI glitches reported in app version 1.2.",
+        "date": "2025-01-17",
+        "category": "Development",
+        "active": true,
+        "newTask": false,
+        "completed": false,
+        "failed": false
       },
       {
-        title: "Fix deployment script",
-        description: "Resolve errors in CI/CD pipeline.",
-        date: "2025-10-01",
-        category: "DevOps",
-        active: false,
-        newTask: false,
-        completedTask: false,
-        failed: true
+        "title": "Test New Module",
+        "description": "Perform QA on the new user dashboard.",
+        "date": "2025-01-19",
+        "category": "Testing",
+        "active": false,
+        "newTask": false,
+        "completed": false,
+        "failed": true
       }
     ],
-    taskSummary: {
-      activeTasks: 2,
-      newTasks: 1,
-      completedTasks: 1,
-      failedTasks: 1
+    "taskNumbers": {
+      "active": 2,
+      "newTask": 1,
+      "completed": 1,
+      "failed": 1
     }
   },
   {
-    id: 3,
-    firstName: "Isha",
-    email: "employee3@example.com",
-    password: "123",
-    taskCount: 3,
-    tasks: [
+    "id": 3,
+    "firstname": "Rohan",
+    "email": "employee3@example.com",
+    "password": "123",
+    "tasks": [
       {
-        title: "Create dashboard UI",
-        description: "Develop dashboard with charts and stats.",
-        date: "2025-09-27",
-        category: "Frontend",
-        active: true,
-        newTask: true,
-        completedTask: false,
-        failed: false
+        "title": "Inventory Check",
+        "description": "Verify and log warehouse inventory.",
+        "date": "2025-01-09",
+        "category": "Inventory",
+        "active": false,
+        "newTask": true,
+        "completed": false,
+        "failed": true
       },
       {
-        title: "API performance check",
-        description: "Run load testing for API endpoints.",
-        date: "2025-09-28",
-        category: "Backend",
-        active: false,
-        newTask: false,
-        completedTask: false,
-        failed: true
+        "title": "Vendor Communication",
+        "description": "Discuss supply delays with vendors.",
+        "date": "2025-01-13",
+        "category": "Communication",
+        "active": true,
+        "newTask": false,
+        "completed": false,
+        "failed": false
       },
       {
-        title: "Write blog post",
-        description: "Document recent tech upgrade for team.",
-        date: "2025-09-29",
-        category: "Documentation",
-        active: false,
-        newTask: false,
-        completedTask: true,
-        failed: false
+        "title": "Material Request Approval",
+        "description": "Review and approve material requisitions.",
+        "date": "2025-01-18",
+        "category": "Operations",
+        "active": false,
+        "newTask": false,
+        "completed": true,
+        "failed": false
       }
     ],
-    taskSummary: {
-      activeTasks: 1,
-      newTasks: 1,
-      completedTasks: 1,
-      failedTasks: 1
+    "taskNumbers": {
+      "active": 1,
+      "newTask": 1,
+      "completed": 1,
+      "failed": 1
     }
   },
   {
-    id: 4,
-    firstName: "Rohan",
-    email: "employee4@example.com",
-    password: "123",
-    taskCount: 4,
-    tasks: [
+    "id": 4,
+    "firstname": "Vihaan",
+    "email": "employee4@example.com",
+    "password": "123",
+    "tasks": [
       {
-        title: "Setup project repo",
-        description: "Initialize repo with README and guidelines.",
-        date: "2025-09-27",
-        category: "DevOps",
-        active: true,
-        newTask: true,
-        completedTask: false,
-        failed: false
+        "title": "System Backup",
+        "description": "Run full system backup for the week.",
+        "date": "2025-01-08",
+        "category": "IT",
+        "active": false,
+        "newTask": true,
+        "completed": true,
+        "failed": false
       },
       {
-        title: "Bug fixing",
-        description: "Fix UI bugs reported by QA team.",
-        date: "2025-09-28",
-        category: "Frontend",
-        active: false,
-        newTask: false,
-        completedTask: true,
-        failed: false
+        "title": "Security Audit",
+        "description": "Check system logs for unauthorized access.",
+        "date": "2025-01-11",
+        "category": "Security",
+        "active": true,
+        "newTask": false,
+        "completed": false,
+        "failed": false
       },
       {
-        title: "Optimize queries",
-        description: "Improve SQL queries for faster results.",
-        date: "2025-09-29",
-        category: "Database",
-        active: true,
-        newTask: false,
-        completedTask: false,
-        failed: false
+        "title": "Server Maintenance",
+        "description": "Upgrade server OS and security patches.",
+        "date": "2025-01-16",
+        "category": "Maintenance",
+        "active": false,
+        "newTask": false,
+        "completed": false,
+        "failed": true
       },
       {
-        title: "Prepare slides",
-        description: "Make presentation for sprint demo.",
-        date: "2025-09-30",
-        category: "Management",
-        active: false,
-        newTask: false,
-        completedTask: false,
-        failed: true
+        "title": "Network Optimization",
+        "description": "Improve internal network performance.",
+        "date": "2025-01-20",
+        "category": "Network",
+        "active": true,
+        "newTask": false,
+        "completed": false,
+        "failed": false
+      },
+      {
+        "title": "Database Cleanup",
+        "description": "Remove outdated records from database.",
+        "date": "2025-01-21",
+        "category": "Database",
+        "active": false,
+        "newTask": false,
+        "completed": true,
+        "failed": false
       }
     ],
-    taskSummary: {
-      activeTasks: 2,
-      newTasks: 1,
-      completedTasks: 1,
-      failedTasks: 1
+    "taskNumbers": {
+      "active": 2,
+      "newTask": 1,
+      "completed": 2,
+      "failed": 1
     }
   },
   {
-    id: 5,
-    firstName: "Ananya",
-    email: "employee5@example.com",
-    password: "123",
-    taskCount: 4,
-    tasks: [
+    "id": 5,
+    "firstname": "Anika",
+    "email": "employee5@example.com",
+    "password": "123",
+    "tasks": [
       {
-        title: "User feedback form",
-        description: "Build feedback form with validation.",
-        date: "2025-09-27",
-        category: "Frontend",
-        active: true,
-        newTask: true,
-        completedTask: false,
-        failed: false
+        "title": "Customer Survey Review",
+        "description": "Analyze customer satisfaction results.",
+        "date": "2025-01-10",
+        "category": "Analysis",
+        "active": true,
+        "newTask": true,
+        "completed": false,
+        "failed": false
       },
       {
-        title: "Implement JWT auth",
-        description: "Add authentication using JWT in API.",
-        date: "2025-09-28",
-        category: "Backend",
-        active: true,
-        newTask: false,
-        completedTask: false,
-        failed: false
+        "title": "Support Ticket Response",
+        "description": "Respond to high-priority customer tickets.",
+        "date": "2025-01-14",
+        "category": "Support",
+        "active": false,
+        "newTask": false,
+        "completed": true,
+        "failed": false
       },
       {
-        title: "Code review",
-        description: "Review pull requests from teammates.",
-        date: "2025-09-29",
-        category: "Collaboration",
-        active: false,
-        newTask: false,
-        completedTask: true,
-        failed: false
-      },
-      {
-        title: "Database migration",
-        description: "Migrate database to new server.",
-        date: "2025-09-30",
-        category: "Database",
-        active: false,
-        newTask: false,
-        completedTask: false,
-        failed: true
+        "title": "Training Session",
+        "description": "Attend training on the new CRM tool.",
+        "date": "2025-01-18",
+        "category": "Training",
+        "active": false,
+        "newTask": false,
+        "completed": false,
+        "failed": true
       }
     ],
-    taskSummary: {
-      activeTasks: 2,
-      newTasks: 1,
-      completedTasks: 1,
-      failedTasks: 1
+    "taskNumbers": {
+      "active": 1,
+      "newTask": 1,
+      "completed": 1,
+      "failed": 1
     }
   }
-];
+]
 
 const admin = [
   {

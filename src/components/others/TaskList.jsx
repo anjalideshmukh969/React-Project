@@ -4,22 +4,22 @@ const TaskList = ({data}) => {
   return (
     <div className='flex mt-10 justify-between gap-5 screen '>
         <div className='p-10 rounded-xl py-6 px-9 w-[45%] bg-red-400  '>
-            <h2 className='text-3xl font-semibold'>{data.taskSummary.newTasks}</h2>
+            <h2 className='text-3xl font-semibold'>{data.taskNumbers.newTask}</h2>
             <h3 className='text-xl font-medium'>New Task</h3>
         </div>
 
         <div className='p-10 rounded-xl py-6 px-9 w-[45%] bg-blue-400  '>
-            <h2 className='text-3xl font-semibold'>{data.taskSummary.completedTasks}</h2>
+            <h2 className='text-3xl font-semibold'>{data.taskNumbers.completed}</h2>
             <h3 className='text-xl font-medium'>Complted Task</h3>
         </div>
 
         <div className='p-10 rounded-xl py-6 px-9 w-[45%] bg-green-400  '>
-            <h2 className='text-3xl font-semibold'>{data.taskSummary.activeTasks}</h2>
+            <h2 className='text-3xl font-semibold'>{data.taskNumbers.active}</h2>
             <h3 className='text-xl font-medium'>Accepted Task</h3>
         </div>
 
         <div className='p-10 rounded-xl py-6 px-9 w-[45%] bg-yellow-300  '>
-            <h2 className='text-3xl font-semibold'>{data.taskSummary.failedTasks}</h2>
+            <h2 className='text-3xl font-semibold'>{data.taskNumbers.failed}</h2>
             <h3 className='text-xl font-medium'>Failed Task</h3>
         </div>
 
